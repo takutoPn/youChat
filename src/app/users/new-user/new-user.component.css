@@ -1,0 +1,34 @@
+.page {
+  overflow: scroll;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #fff;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+
+.container  {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.heading {
+  margin: 30px 0;
+}
+
+.form-group {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+}
+
+.note {
+  text-align: center;
+  margin: 20px 0;
+}

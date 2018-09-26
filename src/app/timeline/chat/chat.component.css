@@ -1,0 +1,108 @@
+.welcome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcome h1 {
+  margin-bottom: 30px;
+}
+
+.page {
+  overflow: scroll;
+  float: right;
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #fff;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+
+section {
+  margin: 50px 10px 90px;
+}
+
+.chat-editor {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: calc(75% - 2px);
+  max-width: 958px;
+  min-height: 100px;
+  margin: 0;
+  padding: 10px;
+  border-top: 1px solid #DDDDDD;
+  background-color: #fff;
+}
+
+.page .chat .media-body {
+  padding: 15px;
+  margin: 0 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 15px;
+  word-break: break-all;
+}
+
+.media-body h4.media-heading {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+.media-body .media-date {
+  color: #aaaaaa;
+  font-size: 11px;
+}
+
+.media-body pre {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  margin: 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: .3rem;
+  color: #fff;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.media-left .icon {
+  border-radius: 50%;
+  background-color: #f0974e;
+}
+.media-right .icon {
+  border-radius: 50%;
+  background-color: #35b8c2;
+}
+
+.media-body h4.media-heading .fa {
+  cursor: pointer;
+}
+
+.media-body h4.media-heading .fa:hover {
+  color: #666;
+}
+
+.media-body div.edit-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* .media-body div.edit-buttons .btn {
+  width: 100px;
+}
+*/

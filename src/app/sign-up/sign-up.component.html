@@ -1,0 +1,20 @@
+<div class="page">
+  <div class="container">
+    <form #f="ngForm" (ngSubmit)="signup(f)">
+      <h2 class="heading text-center">アカウントを作成</h2>
+      <div class="form-group">
+        <input type="email" ngModel name="email" class="form-control" placeholder="メールアドレスを入力" required autofocus>
+      </div>
+      <div class="form-group">
+        <input type="password" ngModel name="password" class="form-control" placeholder="パスワードを入力" required>
+      </div>
+      <div class="form-group">
+        <input type="password" ngModel name="confirm_password" class="form-control" placeholder="確認用パスワードを入力" required>
+      </div>
+      <button class="btn btn-lg btn-primary" type="submit">新規登録</button>
+    </form>
+    <div class="note">
+      <a routerLink="/login" class="signup-link">ログインはこちら</a>
+    </div>
+  </div>
+</div>

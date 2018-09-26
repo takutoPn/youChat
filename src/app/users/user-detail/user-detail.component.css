@@ -1,0 +1,35 @@
+.page {
+  max-width: 960px;
+  overflow: scroll;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #fff;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.image {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: #fcfcfc;
+}
+
+.form-group h5 {
+  margin-bottom: 1rem;
+}
+
+.form-group p {
+  margin-bottom: 0;
+}
