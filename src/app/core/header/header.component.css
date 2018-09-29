@@ -2,3 +2,7 @@
 
  flex: 1 1 auto;
 }
+.btn-primary {
+  color: white;
+  background-color: #3f51b5;
+}
