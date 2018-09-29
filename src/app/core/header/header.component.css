@@ -5,3 +5,7 @@
 .hedder {
   position: fixed;
 }
+.btn-primary {
+  color: white;
+  background-color: #3f51b5;
+}

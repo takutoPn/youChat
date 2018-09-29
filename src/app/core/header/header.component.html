@@ -2,6 +2,6 @@
   <span routerLink="/" class= "navbar-brand" > youChat </span>
 
   <span class='fill-space'></span>
-  <span routerLink="/signup" *ngIf="!login" class="navbar-text text-white">登録</span>
-  <span routerLink="/" *ngIf="login" class="navbar-text text-white" (click)="logout()">ログアウト</span>
+  <button mat-raised-button routerLink="/signup" *ngIf="!login" class="navbar-text text-white btn-primary">登録</button>
+  <button mat-raised-button routerLink="/" *ngIf="login" class="navbar-text text-white btn-primary" (click)="logout()">ログアウト</button>
 </mat-toolbar>
