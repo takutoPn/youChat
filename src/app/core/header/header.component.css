@@ -1,3 +1,7 @@
-.navbar {
-  border-bottom: 1px solid #ddd;
+.fill-space {
+ flex: 1 1 auto;
+
+}
+.hedder {
+  position: fixed;
 }

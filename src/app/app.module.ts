@@ -13,7 +13,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { NotFoundComponent } from './error/not-found/not-found.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,13 @@ import { LoginComponent } from './login/login.component';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AppRoutingModule,
-    TimelineModule
+    TimelineModule,
+    BrowserAnimationsModule,
+    MatButtonModule, MatCheckboxModule,
+    MatToolbarModule
+  ],
+  exports: [
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../service/auth.service';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',

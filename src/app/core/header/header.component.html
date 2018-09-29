@@ -1,5 +1,7 @@
-<nav class="navbar justify-content-between fixed-top navbar-inverse bg-light text-dark">
-  <a routerLink="/" class="navbar-brand text-dark">you</a>
-  <a routerLink="/signup" *ngIf="!login" class="navbar-text text-dark">登録</a>
-  <a routerLink="/" *ngIf="login" class="navbar-text text-dark" (click)="logout()">ログアウト</a>
-</nav>
+<mat-toolbar color='primary' class='hedder'>
+  <span routerLink="/" class= "navbar-brand" > youChat </span>
+
+  <span class='fill-space'></span>
+  <span routerLink="/signup" *ngIf="!login" class="navbar-text text-white">登録</span>
+  <span routerLink="/" *ngIf="login" class="navbar-text text-white" (click)="logout()">ログアウト</span>
+</mat-toolbar>
