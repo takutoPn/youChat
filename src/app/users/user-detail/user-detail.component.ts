@@ -3,12 +3,15 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { User } from '../../class/user';
 import { Location } from '@angular/common';
+import { AngularFireAuth } from 'angularfire2/auth';
+import { AuthService } from '../../core/service/auth.service';
 
 @Component({
   selector: 'app-user-detail',
   templateUrl: './user-detail.component.html',
   styleUrls: ['./user-detail.component.css']
 })
+
 export class UserDetailComponent implements OnInit {
 
   user: User;
@@ -16,7 +19,7 @@ export class UserDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private db: AngularFireDatabase,
-    private location: Location
+    private location: Location,
   ) { }
 
   ngOnInit() {
