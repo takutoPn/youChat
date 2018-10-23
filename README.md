@@ -1,7 +1,8 @@
+# youChat
 はーい　こーんにーちはー
 勉強でやってまーす
 
-公開したよー
+# 公開してるよー
 https://angular-chat-b2b84.firebaseapp.com/
 
 # SNSなど
