@@ -1,7 +1,8 @@
 <div *ngIf="!currentUser" class="welcome">
   <div class="jumbotron jumbotron-fluid p-5 border border-secondary bg-light">
     <div class="container">
-      <h1 class="display-3">you</h1>
+
+      <img src="https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794" class="display-3 size">
       <p class="w-100">
         <a routerLink="/signup">新規登録</a>または<a routerLink="/login">ログイン</a>
       </p>
@@ -40,8 +41,8 @@
                   name="edit_comment"></textarea>
               </div>
               <div class="edit-buttons">
-                <button class="btn btn-success btn-sm" (click)="saveEditComment(i, comment.key)">保存</button>
-                <button class="btn btn-warning btn-sm" (click)="toggleEditComment(i)">キャンセル</button>
+                <button mat-raised-button class="btn btn-success btn-sm" (click)="saveEditComment(i, comment.key)">保存</button>
+                <button mat-raised-button class="btn btn-warning btn-sm" (click)="toggleEditComment(i)">キャンセル</button>
               </div>
             </ng-container>
           </div>
