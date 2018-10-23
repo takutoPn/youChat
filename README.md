@@ -4,7 +4,7 @@
 公開したよー
 https://angular-chat-b2b84.firebaseapp.com/
 
-##SNSなど
+# SNSなど
 
 ブログ:https://www.pppppo-n.com/
 
