@@ -1,0 +1,15 @@
+<section class="chat-editor">
+    <form class="chat-form">
+      <div class="form-header d-flex flex-row-reverse mb-2">
+        <span class="input-group-btn">
+          <button mat-button class="btn btn-info btn-sm bottuoncolor" type="submit" tabindex="2"
+            (click)="addComment(content)"> 送信 </button>
+        </span>
+      </div>
+      <div class="input-group">
+
+          <textarea [(ngModel)]="content" name="content" class="form-control" placeholder="Aa" tabindex="1"></textarea>
+
+      </div>
+    </form>
+    </section>

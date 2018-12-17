@@ -21,7 +21,8 @@ import {
   MatDividerModule,
   MatListModule,
   MatCardModule,
-  MatListItem
+  MatListItem,
+  MatFormFieldModule
 } from '@angular/material';
 
 @NgModule({
@@ -42,7 +43,8 @@ import {
     TimelineModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,
-    MatToolbarModule, MatCardModule, MatListModule
+    MatToolbarModule, MatCardModule, MatListModule,
+    MatFormFieldModule
   ],
   exports: [
     MatToolbarModule, MatListItem

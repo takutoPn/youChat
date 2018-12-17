@@ -4,15 +4,13 @@ import { User } from '../../class/user';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../../core/service/auth.service';
-import { InputComponent } from '../input/input.component';
 
 @Component({
-  selector: 'app-chat',
-  templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.css']
+  selector: 'app-input',
+  templateUrl: './input.component.html',
+  styleUrls: ['./input.component.css']
 })
-export class ChatComponent implements OnInit {
-
+export class InputComponent implements OnInit {
   comments: Comment[];
   commentsRef: AngularFireList<any>;
   currentUser: User;
@@ -51,23 +49,4 @@ export class ChatComponent implements OnInit {
       this.content = '';
     }
   }
-
-  toggleEditComment(index: number): void {
-    this.comments[index].isEdit = !this.comments[index].isEdit;
-  }
-
-  saveEditComment(index: number, key: string): void {
-    this.commentsRef.update(key, {
-      message: this.comments[index].message,
-      date: this.comments[index].date
-    })
-      .then(() => {
-        this.comments[index].isEdit = false;
-      });
-  }
-
-  deleteComment(key: string): void {
-    this.commentsRef.remove(key);
-  }
-
 }

@@ -101,10 +101,7 @@ section {
   margin-top: 10px;
   text-align: center;
 }
-.bottuoncolor {
-  color: white;
-  background-color: green;
-}
+
  /* .media-body div.edit-buttons .btn {
   width: 100px;
   right: 0;
@@ -112,3 +109,11 @@ section {
   flex: 1 1 auto;
 }
 */
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+}
+.input-group > * {
+  width: 100%;
+}

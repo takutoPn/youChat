@@ -11,7 +11,9 @@ import {
   MatCheckboxModule,
   MatDividerModule,
   MatCardModule,
+  MatFormFieldModule,
 } from '@angular/material';
+import { InputComponent } from './input/input.component';
 
 
 @NgModule({
@@ -23,10 +25,12 @@ import {
     MatCheckboxModule,
     MatDividerModule,
     MatCardModule,
+    MatFormFieldModule,
   ],
   declarations: [
     ChatComponent,
     UserListComponent,
+    InputComponent,
 
   ]
 })
