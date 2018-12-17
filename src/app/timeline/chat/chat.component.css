@@ -26,14 +26,13 @@
 section {
   margin: 50px 10px 90px;
 }
-
 .chat-editor {
   display: block;
   position: fixed;
   bottom: 0;
   width: calc(75% - 2px);
-  max-width: 958px;
-  min-height: 100px;
+  max-width: 100%;
+  min-height: max-content;
   margin: 0;
   padding: 10px;
   border-top: 1px solid #DDDDDD;
@@ -116,4 +115,8 @@ section {
 }
 .input-group > * {
   width: 100%;
+}
+mat-card {
+  position: fixed;
+  z-index: 999;
 }

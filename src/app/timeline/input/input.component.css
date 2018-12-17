@@ -2,3 +2,7 @@
   color: white;
   background-color: green;
 }
+textarea {
+  padding: 0.5em;
+  resize: none;
+  }
