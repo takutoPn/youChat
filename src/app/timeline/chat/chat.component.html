@@ -1,5 +1,5 @@
 <div *ngIf="!currentUser" class="welcome">
-  <div class="jumbotron jumbotron-fluid p-5 border border-secondary bg-light">
+  <mat-card class="jumbotron jumbotron-fluid p-5 border border-secondary bg-light">
     <div class="container">
 
       <img src="https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794"
@@ -8,7 +8,7 @@
         <a routerLink="/signup">新規登録</a>または<a routerLink="/login">ログイン</a>
       </p>
     </div>
-  </div>
+  </mat-card>
 </div>
 
 <ng-container *ngIf='currentUser'>

@@ -1,17 +1,18 @@
+
 <div class="page">
-  <div class="container">
+    <mat-card class="container">
     <form #f="ngForm" (ngSubmit)="login(f)">
-      <h2 class="heading text-center">ログイン</h2>
-      <div class="form-group">
-        <input type="email" ngModel name="email" class="form-control" placeholder="メールアドレスを入力" required autofocus>
-      </div>
-      <div class="form-group">
-        <input type="password" ngModel name="password" class="form-control" placeholder="パスワードを入力" required>
-      </div>
+      <h2 class="heading ">ログイン</h2>
+      <mat-form-field class="form-group">
+        <input matInput type="email" ngModel name="email" class="form-control" placeholder="メールアドレスを入力" required autofocus>
+      </mat-form-field><br>
+      <mat-form-field class="form-group">
+        <input matInput type="password" ngModel name="password" class="form-control" placeholder="パスワードを入力" required>
+      </mat-form-field><br>
       <button mat-raised-button class="btn btn-lg btn-primary" type="submit">ログイン</button>
     </form>
     <div class="note">
       <a routerLink="/signup">アカウントを新規作成</a>
     </div>
-  </div>
+  </mat-card>
 </div>

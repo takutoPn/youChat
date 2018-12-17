@@ -1,0 +1,12 @@
+input {
+ font-size: 20px;
+
+
+
+}
+#listsearch {
+  background-color: #d5d7df;
+   height: 80px;
+/*  z-index: 9999;
+  position: fixed; */
+}

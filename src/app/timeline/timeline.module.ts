@@ -15,6 +15,7 @@ import {
 } from '@angular/material';
 import { InputComponent } from './input/input.component';
 import { MatInputModule } from '@angular/material/input';
+import { UserListSearchComponent } from './user-list-search/user-list-search.component';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { MatInputModule } from '@angular/material/input';
     ChatComponent,
     UserListComponent,
     InputComponent,
+    UserListSearchComponent,
 
   ]
 })

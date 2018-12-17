@@ -6,12 +6,12 @@
   background-color: #fff;
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
+  text-align:center
 }
 
 .container  {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-top: 10%;
+  margin-left: center;
 }
 
 .heading {
