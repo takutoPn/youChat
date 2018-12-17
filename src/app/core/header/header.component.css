@@ -1,16 +1,9 @@
-mat-toolbar{
-  z-index: 9999;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-}
-
 .fill-space {
  flex: 1 1 auto;
 
 }
 .hedder {
-  /* position: fixed; */
+  position: fixed;
 }
 .btn-primary {
   color: white;
