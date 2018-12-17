@@ -1,7 +1,11 @@
-
 <div class="user-list">
   <div class="inner">
     <ul class="users">
+        <mat-card>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="検索" value="">
+          </mat-form-field>
+        </mat-card>
         <mat-card *ngFor="let user of users" [routerLink]="['users', user.uid]">
             <a >
                 <div class="image"><img src="//placehold.jp/30x30.png" alt="{{user.displayName}}" class="rounded-circle"></div>

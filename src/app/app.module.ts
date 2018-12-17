@@ -13,7 +13,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { NotFoundComponent } from './error/not-found/not-found.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 import {
   MatButtonModule,
   MatCheckboxModule,
@@ -24,6 +25,7 @@ import {
   MatListItem,
   MatFormFieldModule
 } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import {
     AppRoutingModule,
     TimelineModule,
     BrowserAnimationsModule,
+    MatInputModule,
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatListModule,
     MatFormFieldModule

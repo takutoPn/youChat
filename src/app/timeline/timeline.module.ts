@@ -14,7 +14,7 @@ import {
   MatFormFieldModule,
 } from '@angular/material';
 import { InputComponent } from './input/input.component';
-
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   imports: [
@@ -26,6 +26,7 @@ import { InputComponent } from './input/input.component';
     MatDividerModule,
     MatCardModule,
     MatFormFieldModule,
+    MatInputModule
   ],
   declarations: [
     ChatComponent,
