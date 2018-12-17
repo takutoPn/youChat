@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { User } from '../../class/user';
+import { MatListModule } from'@angular/material';
 
 @Component({
   selector: 'app-user-list',
@@ -15,7 +16,6 @@ export class UserListComponent implements OnInit {
   constructor(private db: AngularFireDatabase) {
     this.usersRef = db.list('/users');
   }
-
   ngOnInit() {
     this.usersRef.snapshotChanges().subscribe(snapshots => {
       this.users = snapshots.map(snapshot => {

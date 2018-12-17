@@ -14,15 +14,22 @@ import { NotFoundComponent } from './error/not-found/not-found.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import { MatToolbarModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatToolbarModule,
+  MatDividerModule,
+  MatListModule,
+  MatCardModule,
+  MatListItem
+} from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
     SignUpComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,10 +42,10 @@ import { MatToolbarModule } from '@angular/material';
     TimelineModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule, MatCardModule, MatListModule
   ],
   exports: [
-    MatToolbarModule
+    MatToolbarModule, MatListItem
   ],
   providers: [],
   bootstrap: [AppComponent]

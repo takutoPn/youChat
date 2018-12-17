@@ -4,10 +4,12 @@ mat-toolbar{
   top: 0px;
   left: 0px;
 }
+img{
+  border:none;
+}
 
 .fill-space {
  flex: 1 1 auto;
-
 }
 .hedder {
   /* position: fixed; */

@@ -6,7 +6,12 @@ import { ChatComponent } from './chat/chat.component';
 import { TimelineRoutingModule } from './/timeline-routing.module';
 import { UserListComponent } from './user-list/user-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatDividerModule,
+  MatCardModule,
+} from '@angular/material';
 
 
 @NgModule({
@@ -15,11 +20,14 @@ import {MatButtonModule, MatCheckboxModule } from '@angular/material';
     SharedModule,
     TimelineRoutingModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatDividerModule,
+    MatCardModule,
   ],
   declarations: [
     ChatComponent,
-    UserListComponent
+    UserListComponent,
+
   ]
 })
 export class TimelineModule { }
