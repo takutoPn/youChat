@@ -1,51 +1,92 @@
 <div *ngIf="!currentUser" class="welcome">
-  <mat-card class="jumbotron jumbotron-fluid p-5 border border-secondary bg-light">
+  <mat-card
+    class="jumbotron jumbotron-fluid p-5 border border-secondary bg-light"
+  >
     <div class="container">
-
-      <img src="https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794"
-        class="display-3 size">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794"
+        class="display-3 size"
+      />
       <p class="w-100">
-        <a routerLink="/signup">新規登録</a>または<a routerLink="/login">ログイン</a>
+        <a routerLink="/signup">新規登録</a>または<a routerLink="/login"
+          >ログイン</a
+        >
       </p>
+      <i></i>
     </div>
   </mat-card>
 </div>
 
-<ng-container *ngIf='currentUser'>
+<ng-container *ngIf="currentUser">
   <app-user-list></app-user-list>
   <div class="page">
     <section class="chat">
       <div class="chat-timeline">
         <ng-container *ngFor="let comment of comments; let i = index">
-          <div class="list-group-item list-group-item-action flex-column align-items-start border-0">
+          <div
+            class="list-group-item list-group-item-action flex-column align-items-start border-0"
+          >
             <div class="media">
-              <div class="media-left" *ngIf="comment.user.uid !== currentUser.uid">
+              <div
+                class="media-left"
+                *ngIf="comment.user.uid !== currentUser.uid"
+              >
                 <a href="#" class="icon">{{ comment.initial }}</a>
               </div>
               <div class="media-body">
                 <div class="d-flex w-100 justify-content-between">
-                  <h4 class="media-heading">{{ comment.user.displayName }}
+                  <h4 class="media-heading">
+                    {{ comment.user.displayName }}
                     <ng-container *ngIf="comment.user.uid === currentUser.uid">
-                      <i class="fa fa-edit ml-2" title="編集" (click)="toggleEditComment(i)"></i>
-                      <i class="fa fa-trash ml-1" title="削除" (click)="deleteComment(comment.key)"></i>
+                      <i
+                        class="fa fa-edit ml-2"
+                        title="編集"
+                        (click)="toggleEditComment(i)"
+                      ></i>
+                      <i
+                        class="fa fa-trash ml-1"
+                        title="削除"
+                        (click)="deleteComment(comment.key)"
+                      ></i>
                     </ng-container>
                   </h4>
-                  <small class="media-date">{{ comment.date | commentDate }}</small>
+                  <small class="media-date">{{
+                    comment.date | commentDate
+                  }}</small>
                 </div>
                 <ng-container *ngIf="!comment.isEdit">
                   <pre>{{ comment.message }}</pre>
                 </ng-container>
                 <ng-container *ngIf="comment.isEdit">
                   <div class="input-group">
-                    <textarea class="form-control" [(ngModel)]="comment.message" name="edit_comment"></textarea>
+                    <textarea
+                      class="form-control"
+                      [(ngModel)]="comment.message"
+                      name="edit_comment"
+                    ></textarea>
                   </div>
                   <div class="edit-buttons">
-                    <button mat-raised-button class="btn btn-success btn-sm" (click)="saveEditComment(i, comment.key)">保存</button>
-                    <button mat-raised-button class="btn btn-warning btn-sm" (click)="toggleEditComment(i)">キャンセル</button>
+                    <button
+                      mat-raised-button
+                      class="btn btn-success btn-sm"
+                      (click)="saveEditComment(i, comment.key)"
+                    >
+                      保存
+                    </button>
+                    <button
+                      mat-raised-button
+                      class="btn btn-warning btn-sm"
+                      (click)="toggleEditComment(i)"
+                    >
+                      キャンセル
+                    </button>
                   </div>
                 </ng-container>
               </div>
-              <div class="media-right" *ngIf="comment.user.uid === currentUser.uid">
+              <div
+                class="media-right"
+                *ngIf="comment.user.uid === currentUser.uid"
+              >
                 <a href="#" class="icon">{{ comment.initial }}</a>
               </div>
             </div>
@@ -53,8 +94,6 @@
         </ng-container>
       </div>
     </section>
-    <mat-card class="chat-editor">
-      <app-input></app-input>
-    </mat-card>
+    <mat-card class="chat-editor"> <app-input></app-input> </mat-card>
   </div>
 </ng-container>
