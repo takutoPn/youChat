@@ -1,6 +1,6 @@
 <!-- 検索ボックス -->
 <mat-card id='listsearch'>
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="検索" >
+    <input matInput placeholder="検索"  #userSearch id="user-Search" (keyup)="search(userSearch.value)">
   </mat-form-field>
 </mat-card>
