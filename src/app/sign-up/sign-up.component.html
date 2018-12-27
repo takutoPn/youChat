@@ -3,13 +3,13 @@
     <form #f="ngForm" (ngSubmit)="signup(f)">
       <h2 class="heading text-center">アカウントを作成</h2>
         <mat-form-field class="form-group">
-          <input matInput placeholder="Email" ngModel name="email" placeholder="メールアドレスを入力" required autofocus>
+          <input matInput placeholder="Email" ngModel name="email" class="form-control" placeholder="メールアドレスを入力" required autofocus>
           </mat-form-field><br>
       <mat-form-field class="form-group">
-        <input matInput type="password" ngModel name="password" placeholder="パスワードを入力" required>
+        <input matInput type="password" ngModel name="password" class="form-control" placeholder="パスワードを入力" required>
       </mat-form-field><br>
       <mat-form-field class="form-group">
-        <input matInput type="password" ngModel name="confirm_password" placeholder="確認用パスワードを入力" required>
+        <input matInput type="password" ngModel name="confirm_password" class="form-control" placeholder="確認用パスワードを入力" required>
       </mat-form-field><br>
       <button mat-raised-button class="btn btn-lg btn-primary" type="submit">新規登録</button>
     </form>

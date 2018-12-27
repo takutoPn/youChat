@@ -119,5 +119,4 @@ section {
 mat-card {
   position: fixed;
   z-index: 999;
-  /* ヘッダーやフッターと被らないようにするプログラム */
 }

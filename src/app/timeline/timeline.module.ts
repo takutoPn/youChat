@@ -6,8 +6,6 @@ import { ChatComponent } from './chat/chat.component';
 import { TimelineRoutingModule } from './/timeline-routing.module';
 import { UserListComponent } from './user-list/user-list.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { UserDetailComponent } from '../users/user-detail/user-detail.component';
-
 import {
   MatButtonModule,
   MatCheckboxModule,
@@ -29,14 +27,14 @@ import { UserListSearchComponent } from './user-list-search/user-list-search.com
     MatDividerModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule,
+    MatInputModule
   ],
   declarations: [
     ChatComponent,
     UserListComponent,
     InputComponent,
     UserListSearchComponent,
-    UserDetailComponent,
+
   ]
 })
 export class TimelineModule { }
