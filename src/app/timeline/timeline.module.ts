@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
+import { UsersModule } from '../users/users.module';
 
 import { ChatComponent } from './chat/chat.component';
 import { TimelineRoutingModule } from './/timeline-routing.module';
@@ -23,6 +24,7 @@ import { UserDetailShowComponent } from './user-detail-show/user-detail-show.com
   imports: [
     CommonModule,
     SharedModule,
+    UsersModule,
     TimelineRoutingModule,
     MatButtonModule,
     MatCheckboxModule,
@@ -36,7 +38,7 @@ import { UserDetailShowComponent } from './user-detail-show/user-detail-show.com
     UserListComponent,
     InputComponent,
     UserListSearchComponent,
-    UserDetailComponent,
+    // UserDetailComponent,
     UserDetailShowComponent,
 
   ]
