@@ -4,6 +4,13 @@ mat-toolbar{
   top: 0px;
   left: 0px;
 }
+mat-menu {
+  z-index: 9999;
+  position: fixed;
+  flex: 1 1 auto;
+  top: 0px;
+  left: 0px;
+}
 img{
   border:none;
 }
@@ -11,9 +18,7 @@ img{
 .fill-space {
  flex: 1 1 auto;
 }
-.hedder {
-  /* position: fixed; */
-}
+
 .btn-primary {
   color: white;
   background-color: #3f51b5;

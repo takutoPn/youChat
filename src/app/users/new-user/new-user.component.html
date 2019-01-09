@@ -1,11 +1,11 @@
 <div class="page">
   <mat-card class="container">
     <form #f="ngForm" (ngSubmit)="submitForm(f)">
-      <h2 class="heading">ユーザー情報登録</h2>
+      <h2 class="heading">ユーザー情報</h2>
       <mat-form-field class="form-group">
-        <input matInput type="text" ngModel name="displayName" id="displayName" class="form-control" placeholder="名前を入力" required>
+        <input matInput type="text" ngModel name="displayName" id="displayName" placeholder="ニックネーム" required>
       </mat-form-field>
-      <button mat-icon-button class="btn btn-lg btn-info btn-primary" type="submit">→</button>
+      <button mat-icon-button class="btn btn-lg btn-info" type="submit">→</button>
     </form>
   </mat-card>
 </div>

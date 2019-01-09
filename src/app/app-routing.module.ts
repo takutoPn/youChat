@@ -7,6 +7,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
 import {
   MatButtonModule,
   MatCheckboxModule,
@@ -16,6 +17,7 @@ import {
   MatCardModule,
   MatListItem,
   MatFormFieldModule,
+  MatIconModule
 } from '@angular/material';
 
 const routes: Routes = [
@@ -38,7 +40,7 @@ const routes: Routes = [
     MatInputModule,
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatListModule,
-    MatFormFieldModule
+    MatFormFieldModule, MatMenuModule, MatIconModule
   ],
   declarations: [],
   providers: [

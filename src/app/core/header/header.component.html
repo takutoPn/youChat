@@ -3,5 +3,12 @@
 
   <span class='fill-space'></span>
   <button mat-raised-button routerLink="/signup" *ngIf="!login" class="navbar-text text-white btn-primary">登録</button>
-  <button mat-raised-button routerLink="/" *ngIf="login" class="navbar-text text-white btn-primary" (click)="logout()">ログアウト</button>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item></button>
+    <button mat-menu-item routerLink="/users/new" *ngIf="login">アカウントの編集</button>
+    <button mat-menu-item routerLink="/" (click)="logout()">ログアウト</button>
+  </mat-menu>
 </mat-toolbar>
