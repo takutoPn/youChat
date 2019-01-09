@@ -10,7 +10,7 @@
 	
 ②実行
 	
-	ng serve
+	ng serve --aot
 
 ## 公開してるよー
 https://www.you-chat.tokyo/
