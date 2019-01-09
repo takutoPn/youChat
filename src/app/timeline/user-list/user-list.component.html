@@ -1,15 +1,15 @@
 <div class="user-list">
   <div class="inner">
     <ul class="users">
-       <!-- 検索ボックス -->
-       <app-user-list-search></app-user-list-search>
-        <!-- 名前一覧 -->
-        <mat-card *ngFor="let user of users" [routerLink]="['userDetail', user.uid]">
-            <a >
-                <div class="image"><img src="//placehold.jp/30x30.png" alt="{{user.displayName}}" class="rounded-circle"></div>
-              <b>{{ user.displayName }}</b>
-              </a>
-        </mat-card>
-      </ul>
+      <!-- 検索ボックス -->
+      <app-user-list-search></app-user-list-search>
+      <!-- 名前一覧 -->
+      <mat-card *ngFor="let user of users" [routerLink]="['userDetail', user.uid]">
+        <a>
+          <div class="image"><img src="//placehold.jp/30x30.png" alt="{{user.displayName}}" class="rounded-circle"></div>
+          <b>{{ user.displayName }}</b>
+        </a>
+      </mat-card>
+    </ul>
   </div>
 </div>

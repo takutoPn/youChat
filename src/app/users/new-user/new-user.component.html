@@ -1,11 +1,12 @@
 <div class="page">
-  <mat-card class="container">
-    <form #f="ngForm" (ngSubmit)="submitForm(f)">
-      <h2 class="heading">ユーザー情報</h2>
+  <mat-card class="container example-form">
+    <form #f="ngForm" #formCheck="ngForm" (ngSubmit)="submitForm(f)">
+      <h2 class="heading">ニックネームの編集</h2>
       <mat-form-field class="form-group">
-        <input matInput type="text" ngModel name="displayName" id="displayName" placeholder="ニックネーム" required>
+        <input matInput type="text" ngModel name="displayName" id="displayName" placeholder="ニックネーム"
+        required maxlength="40" minlength="1">
       </mat-form-field>
-      <button mat-icon-button class="btn btn-lg btn-info" type="submit">→</button>
+      <button mat-icon-button class="btn btn-lg btn-info" type="submit" [disabled]="formCheck.invalid">→</button>
     </form>
   </mat-card>
 </div>
