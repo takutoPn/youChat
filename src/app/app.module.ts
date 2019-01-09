@@ -20,7 +20,7 @@ import {
   MatButtonModule,
   MatCheckboxModule,
   MatToolbarModule,
-  MatDividerModule,
+
   MatListModule,
   MatCardModule,
   MatListItem,
@@ -49,7 +49,7 @@ import {
     MatInputModule,
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatListModule,
-    MatFormFieldModule, MatMenuModule, MatIconModule
+    MatFormFieldModule, MatMenuModule, MatIconModule,
   ],
   exports: [
     MatToolbarModule, MatListItem
