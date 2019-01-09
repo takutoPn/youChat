@@ -1,0 +1,13 @@
+<div class="user-list">
+  <div class="inner">
+      <ng-container *ngIf="user">
+          <div class="image"><img src="//placehold.jp/150x150.png" class="rounded-circle" alt="{{ user.displayName }}"></div>
+          <div class="form-group">
+            <h1>{{ user.displayName }}</h1>
+          </div>
+          <div class="form-group">
+            <p>【ID】{{ user.uid }}</p>
+          </div>
+        </ng-container>
+  </div>
+</div>

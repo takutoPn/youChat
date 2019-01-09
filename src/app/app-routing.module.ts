@@ -7,6 +7,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
 import {
   MatButtonModule,
   MatCheckboxModule,
@@ -16,13 +17,15 @@ import {
   MatCardModule,
   MatListItem,
   MatFormFieldModule,
+  MatIconModule
 } from '@angular/material';
 
 const routes: Routes = [
-  { path: '', loadChildren: 'app/timeline/timeline.module#TimelineModule' },
+  { path: 'timeline', loadChildren: 'app/timeline/timeline.module#TimelineModule' },
   { path: 'users', loadChildren: 'app/users/users.module#UsersModule' },
   { path: 'signup', component: SignUpComponent, canActivate: [ AuthGuard ] },
   { path: 'login', component: LoginComponent, canActivate: [ AuthGuard ] },
+  { path: '', redirectTo: 'timeline', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
 
@@ -37,7 +40,7 @@ const routes: Routes = [
     MatInputModule,
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatListModule,
-    MatFormFieldModule
+    MatFormFieldModule, MatMenuModule, MatIconModule
   ],
   declarations: [],
   providers: [

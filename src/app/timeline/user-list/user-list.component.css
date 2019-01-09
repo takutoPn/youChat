@@ -4,6 +4,7 @@
   height: 100%;
   background-color: white;
   overflow: scroll;
+
 }
 
 .inner {
@@ -13,9 +14,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
-.users mat-card {
-
 }
 
 .users ul {

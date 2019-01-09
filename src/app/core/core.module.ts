@@ -5,7 +5,13 @@ import { HeaderComponent } from './header/header.component';
 import { AuthService } from './service/auth.service';
 import { UserService } from './service/user.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatToolbarModule} from '@angular/material';
+import {
+        MatButtonModule,
+        MatCheckboxModule,
+        MatToolbarModule,
+        MatIconModule,
+        } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   imports: [
@@ -13,11 +19,14 @@ import {MatButtonModule, MatCheckboxModule, MatToolbarModule} from '@angular/mat
     RouterModule,
     BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule ,
+    MatIconModule ,
   ],
   exports: [
     HeaderComponent,
-    MatToolbarModule
+    MatToolbarModule,
+
   ],
   declarations: [HeaderComponent],
   providers: [

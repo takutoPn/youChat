@@ -15,6 +15,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
 import {
   MatButtonModule,
   MatCheckboxModule,
@@ -23,7 +24,8 @@ import {
   MatListModule,
   MatCardModule,
   MatListItem,
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatIconModule,
 } from '@angular/material';
 
 
@@ -47,7 +49,7 @@ import {
     MatInputModule,
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatListModule,
-    MatFormFieldModule
+    MatFormFieldModule, MatMenuModule, MatIconModule
   ],
   exports: [
     MatToolbarModule, MatListItem
