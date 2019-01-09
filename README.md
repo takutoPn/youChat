@@ -13,7 +13,7 @@
 	ng serve
 
 ## 公開してるよー
-https://angular-chat-b2b84.firebaseapp.com/
+https://www.you-chat.tokyo/
 
 ## SNSなど
 
