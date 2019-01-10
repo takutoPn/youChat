@@ -1,8 +1,7 @@
 <mat-toolbar color='primary' class='hedder'>
   <img align="left" src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/LOGOwhite.png?alt=media&token=472d7013-81f1-4294-81b7-f76b54716a1f'routerLink="/" class= "navbar-brand" >
-
+<app-user-search *ngIf="login"></app-user-search>
   <span class='fill-space'></span>
-
   <button mat-raised-button routerLink="/signup" *ngIf="!login" class="navbar-text text-white btn-primary">登録</button>
   <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="login" align="right">
     <mat-icon>more_vert</mat-icon>

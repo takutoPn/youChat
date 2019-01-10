@@ -28,3 +28,6 @@ img{
   height: 40px;
   width: 146px
 }
+button {
+  border: none;
+}

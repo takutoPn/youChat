@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../service/auth.service';
-import { UserListSearchComponent } from '../../timeline/user-list-search/user-list-search.component';
+import { UserSearchComponent } from '../user-search/user-search.component';
 
 @Component({
   selector: 'app-header',

@@ -1,0 +1,10 @@
+input {
+  font-size: 18px;
+  border: none;
+ }
+ #listsearch {
+   /* background-color: #d5d7df; */
+    height: 30px;
+ /*  z-index: 9999;
+   position: fixed; */
+ }
