@@ -8,7 +8,7 @@ import {
   MatInputModule,
   MatButtonModule, MatCheckboxModule,
   MatToolbarModule, MatCardModule, MatListModule,
-  MatFormFieldModule} from '@angular/material';
+  MatFormFieldModule } from '@angular/material';
 
 @NgModule({
   imports: [

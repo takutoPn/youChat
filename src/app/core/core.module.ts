@@ -4,12 +4,15 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { AuthService } from './service/auth.service';
 import { UserService } from './service/user.service';
+import { UserListSearchComponent } from '../timeline/user-list-search/user-list-search.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
         MatButtonModule,
         MatCheckboxModule,
         MatToolbarModule,
         MatIconModule,
+        MatFormFieldModule,
+        MatCardModule,
         } from '@angular/material';
 import { MatMenuModule } from '@angular/material/menu';
 
@@ -22,6 +25,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatToolbarModule,
     MatMenuModule ,
     MatIconModule ,
+    MatFormFieldModule,
+    MatCardModule,
   ],
   exports: [
     HeaderComponent,
