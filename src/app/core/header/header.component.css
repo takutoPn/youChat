@@ -1,9 +1,11 @@
+/* ヘッダー全般 */
 mat-toolbar{
   z-index: 9999;
   position: fixed;
   top: 0px;
   left: 0px;
 }
+/* アカウントの設定関連のボタン */
 mat-menu {
   z-index: 9999;
   position: fixed;
@@ -11,23 +13,22 @@ mat-menu {
   top: 0px;
   left: 0px;
 }
+/* youchatロゴ設定 */
 img{
-  border:none;
-
+  outline:none;
+  height: 40px;
+  width: 146px;
 }
-
+/* ボタンの枠線削除 */
+button {
+  outline:none;
+}
+/* 真ん中に空白を作る */
 .fill-space {
  flex: 1 1 auto;
 }
-
+/* 登録ボタン */
 .btn-primary {
   color: white;
   background-color: #3f51b5;
-}
-.navbar-brand{
-  height: 40px;
-  width: 146px
-}
-button {
-  border: none;
 }

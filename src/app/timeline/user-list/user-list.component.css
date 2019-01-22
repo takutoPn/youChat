@@ -27,6 +27,11 @@
   position: relative;
   margin-right: 20px;
 }
+
+mat-card {
+  outline:none;
+}
+
 img{
   width: 40px;
   height: 40px;

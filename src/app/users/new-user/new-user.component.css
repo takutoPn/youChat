@@ -1,30 +1,27 @@
+/* ページ全般 */
 .page {
   overflow: scroll;
   height: 100%;
   background-color: #fff;
-
-
 }
-
+/* ニックネーム編集欄 */
 .container {
   text-align: center;
   margin-top: 10%;
   margin-left: center;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
-
-.form-group {
+/* 入力欄 */
+.userNameDetail {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-
+/* ボタン */
 button[type="submit"] {
   cursor: pointer;
   color: white;
   background-color: green;
-}
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
 }
