@@ -19,7 +19,7 @@
     <section class="chat">
       <div class="chat-timeline">
         <ng-container *ngFor="let comment of comments; let i = index">
-          <div class="list-group-item list-group-item-action flex-column align-items-start border-0">
+          <div class="list-group-item flex-column align-items-start border-0">
             <div class="media">
               <div class="media-left" *ngIf="comment.user.uid !== currentUser.uid">
                 <a href="#" class="icon">{{ comment.initial }}</a>
