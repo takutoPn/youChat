@@ -4,9 +4,9 @@ import { NgForm } from '@angular/forms';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
 @Component({
-  selector: 'app-new-user',
-  templateUrl: './new-user.component.html',
-  styleUrls: ['./new-user.component.css']
+  selector: 'app-profile',
+  templateUrl: './profile.component.html',
+  styleUrls: ['./profile.component.css']
 })
 @NgModule({
   imports: [
@@ -14,7 +14,7 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
     MatCheckboxModule
   ],
 })
-export class NewUserComponent implements OnInit {
+export class ProfileComponent implements OnInit {
 
   constructor(private userService: UserService) { }
 

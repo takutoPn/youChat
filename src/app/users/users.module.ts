@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { UsersRoutingModule } from './/users-routing.module';
-import { NewUserComponent } from './new-user/new-user.component';
+import { ProfileComponent } from './profile/profile.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import {
   MatInputModule,
@@ -21,6 +21,6 @@ import {
     MatToolbarModule, MatCardModule, MatListModule,
     MatFormFieldModule
   ],
-  declarations: [NewUserComponent, UserDetailComponent]
+  declarations: [ProfileComponent, UserDetailComponent]
 })
 export class UsersModule { }

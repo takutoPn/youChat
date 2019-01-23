@@ -17,7 +17,7 @@ export class UserService {
     this.afAuth.auth.createUserWithEmailAndPassword(email, password)
       .then(user => {
         this.db.object(`/users/${user.uid}`).set(new User(user));
-        this.router.navigate(['/users/new']);
+        this.router.navigate(['/users/profile']);
       })
       .catch(error => console.error(error));
   }
