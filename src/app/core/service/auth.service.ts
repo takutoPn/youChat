@@ -20,7 +20,8 @@ export class AuthService {
   logout(): void {
     this.afAuth.auth.signOut()
       .then(() => {
-        this.router.navigate(['/login']);
+        this.router.navigate(['/timeline']);
+        location.reload();
       })
       .catch(error => console.error(error));
   }
