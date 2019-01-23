@@ -4,7 +4,8 @@
   height: 100%;
   background-color: #fff;
 }
-/* ニックネーム編集欄 */
+
+/* ニックネーム編集欄・位置・大きさ*/
 .container {
   text-align: center;
   margin-top: 10%;
@@ -13,12 +14,14 @@
   max-width: 500px;
   width: 100%;
 }
+
 /* 入力欄 */
 .userNameDetail {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
+
 /* ボタン */
 button[type="submit"] {
   cursor: pointer;
