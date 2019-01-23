@@ -5,6 +5,15 @@ mat-toolbar{
   top: 0px;
   left: 0px;
 }
+/* youchatロゴ設定 */
+img{
+  outline:none;
+  height: 40px;
+  width: 146px;
+}
+mat-menu:hover {
+  opacity: 0.9;
+}
 /* アカウントの設定関連のボタン */
 mat-menu {
   z-index: 9999;
@@ -13,22 +22,11 @@ mat-menu {
   top: 0px;
   left: 0px;
 }
-/* youchatロゴ設定 */
-img{
-  outline:none;
-  height: 40px;
-  width: 146px;
-}
-/* ボタンの枠線削除 */
+/* ボタン・メニュー */
 button {
   outline:none;
 }
 /* 真ん中に空白を作る */
 .fill-space {
  flex: 1 1 auto;
-}
-/* 登録ボタン */
-.btn-primary {
-  color: white;
-  background-color: #3f51b5;
 }

@@ -1,49 +1,40 @@
+/* ページ全般 */
 .page {
   overflow: scroll;
   height: 100%;
   margin: 0 auto;
   padding: 10px 0;
-  background-color: #fff;
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
 }
 
+/* ログインカード・位置・大きさ */
 .container  {
-  text-align: center;
   margin-top: 10%;
+  text-align: center;
   margin-left: center;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
-
+/* 'ログイン'文字サイズ */
 .heading {
   margin: 30px 0;
 }
-
+/* 入力欄 */
 .form-group {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-
+/* ボタン */
 button[type="submit"] {
   cursor: pointer;
-}
-
-.note {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-primary {
   color: white;
   background-color: #3f51b5;
 }
-
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.example-full-width {
-  width: 100%;
+/* アカウントを新規作成の場合 */
+.note {
+  text-align: center;
+  margin: 20px 0;
 }

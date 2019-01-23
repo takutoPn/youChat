@@ -4,7 +4,9 @@
       <!-- 名前一覧 -->
       <mat-card class = "list-group-item-action" *ngFor="let user of users" [routerLink]="['userDetail', user.uid]">
         <a>
-          <div class="image"><img src="https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/profile.png?alt=media&token=e6ab8e2d-5432-43e9-8b0e-5a3bdac166b0" alt="{{user.displayName}}" class="rounded-circle"></div>
+          <div class="image">
+            <img src="https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/profile.png?alt=media&token=e6ab8e2d-5432-43e9-8b0e-5a3bdac166b0" alt="{{user.displayName}}" class="rounded-circle">
+          </div>
           <b>{{ user.displayName }}</b>
         </a>
       </mat-card>

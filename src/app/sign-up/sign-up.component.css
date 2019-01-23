@@ -9,10 +9,10 @@
   border-right: 1px solid #DDDDDD;
 }
 
-/* アカウント作成カード */
+/* アカウント作成カード・位置・大きさ  */
 .container  {
-  text-align: center;
   margin-top: 10%;
+  text-align: center;
   margin-left: center;
   min-width: 150px;
   max-width: 500px;

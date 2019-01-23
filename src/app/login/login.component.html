@@ -1,6 +1,5 @@
-
 <div class="page">
-  <mat-card class="container example-form">
+  <mat-card class="container">
   <form #f="ngForm" (ngSubmit)="login(f)">
     <h2 class="heading ">ログイン</h2>
     <mat-form-field class="form-group">
@@ -9,7 +8,7 @@
     <mat-form-field class="form-group">
       <input matInput type="password" ngModel name="password" placeholder="パスワードを入力" required>
     </mat-form-field><br>
-    <button mat-raised-button class="btn btn-lg btn-primary" type="submit">ログイン</button>
+    <button mat-raised-button class="btn btn-lg" type="submit">ログイン</button>
   </form>
   <div class="note">
     <a routerLink="/signup">アカウントを新規作成</a>
