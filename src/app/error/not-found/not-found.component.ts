@@ -1,6 +1,6 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatCard } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
 
 @Component({
@@ -11,8 +11,8 @@ import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
   imports: [
-    MatCard,
-        BrowserAnimationsModule,
+    MatCardModule,
+    BrowserAnimationsModule,
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule
   ]

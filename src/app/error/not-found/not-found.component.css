@@ -1,23 +1,19 @@
-.page {
+/* ページ全般 */
+mat-card {
   max-width: 700px;
   margin: 0 auto;
-  padding: 10px 0;
-  background-color: #39424b;
-  border-left: 1px solid ;
-  border-right: 1px solid;
-  box-shadow: 0 0 15px;
-}
-
-.page section{
-  margin: 50px 10px 30px;
+  padding: 60px 0;
   background-color: #39424b;
 }
 
-.page section.card .error-code {
-   color : white;
-  font-size: 36px;
-  line-height: 70px;
+/* 文字「ごめんね、ページが見つからなかった」 */
+p {
+  font-size: 30px;
+  color: white;
 }
-.btn-primary {
+
+/* ボタン */
+button {
+  outline:none;
   background-color: blueviolet;
 }
