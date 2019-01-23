@@ -7,14 +7,13 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../../core/service/auth.service';
 import { NgForm } from '@angular/forms/src/directives/ng_form';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
-// import { UserDetailComponent } from '../../users/user-detail/user-detail.component';
 
 @Component({
-  selector: 'app-user-detail-show',
-  templateUrl: './user-detail-show.component.html',
-  styleUrls: ['./user-detail-show.component.css']
+  selector: 'app-user-detail',
+  templateUrl: './user-detail.component.html',
+  styleUrls: ['./user-detail.component.css']
 })
-export class UserDetailShowComponent implements OnInit {
+export class UserDetailComponent implements OnInit {
   user: User;
 
   constructor(

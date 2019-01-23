@@ -17,7 +17,7 @@ import {
 import { InputComponent } from './input/input.component';
 import { MatInputModule } from '@angular/material/input';
 import { UserListSearchComponent } from './user-list-search/user-list-search.component';
-import { UserDetailShowComponent } from './user-detail-show/user-detail-show.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   imports: [
@@ -37,7 +37,7 @@ import { UserDetailShowComponent } from './user-detail-show/user-detail-show.com
     UserListComponent,
     InputComponent,
     UserListSearchComponent,
-    UserDetailShowComponent,
+    UserDetailComponent,
   ]
 })
 export class TimelineModule { }

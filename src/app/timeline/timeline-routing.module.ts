@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import {ChatComponent} from './chat/chat.component';
-import { UserDetailShowComponent } from './user-detail-show/user-detail-show.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 const routes: Routes = [
   {
     path: '', component: ChatComponent,
     children: [
-      { path: 'userDetail/:id', component: UserDetailShowComponent }
+      { path: 'userDetail/:id', component: UserDetailComponent }
 
     ]
   }
