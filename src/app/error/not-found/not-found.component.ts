@@ -1,7 +1,5 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/material';
-import { MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule } from '@angular/material';
 
 @Component({
   selector: 'app-not-found',
@@ -11,10 +9,7 @@ import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
   imports: [
-    MatCardModule,
-    BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule,
-    MatToolbarModule
+    MatCardModule, MatButtonModule,
   ]
 })
 

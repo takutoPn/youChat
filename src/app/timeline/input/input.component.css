@@ -1,24 +1,11 @@
-.bottuoncolor {
-  color: white;
-  background-color: green;
-}
-textarea {
-  padding: 0.5em;
-  resize: none;
-  }
-
-  .example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-
-  .example-full-width {
-    width: 100%;
-  }
+/* テキストボックスの横幅 */
 .input-me {
   width: 90%;
 }
+
+/* 送信ボタン */
 button {
   float: right;
+  color: white;
+  background-color: green;
 }

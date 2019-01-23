@@ -1,12 +1,12 @@
-<form class="chat-form">
-  <div class="input-group">
-    <mat-form-field class="input-me">
-      <textarea matInput [(ngModel)]="content" name="content" placeholder="Aa" matTextareaAutosize
-        matAutosizeMinRows="2" matAutosizeMaxRows="4"></textarea>
+<form>
+  <div class='input-group'>
+    <mat-form-field class='input-me'>
+      <textarea matInput [(ngModel)]='content' name='content' placeholder='Aa' matTextareaAutosize
+        matAutosizeMinRows='2' matAutosizeMaxRows='4'></textarea>
     </mat-form-field>
-    <div class="form-header d-flex flex-row-reverse mb-2">
-      <span class="input-group-btn">
-        <button mat-icon-button class="btn btn-info btn-sm bottuoncolor" type="submit" tabindex="2" (click)="addComment(content)">
+    <div class='form-header d-flex flex-row-reverse mb-2'>
+      <span class='input-group-btn'>
+        <button mat-icon-button class='btn' type='submit' tabindex='2' (click)='addComment(content)'>
           送信 </button>
       </span>
     </div>
