@@ -15,7 +15,6 @@ import {
         MatCardModule,
         } from '@angular/material';
 import { MatMenuModule } from '@angular/material/menu';
-import { UserSearchComponent } from './user-search/user-search.component';
 
 @NgModule({
   imports: [
@@ -34,7 +33,7 @@ import { UserSearchComponent } from './user-search/user-search.component';
     MatToolbarModule,
 
   ],
-  declarations: [HeaderComponent, UserSearchComponent],
+  declarations: [HeaderComponent],
   providers: [
     AuthService,
     UserService
