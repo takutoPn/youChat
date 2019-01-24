@@ -14,7 +14,8 @@
 .page {
   overflow: scroll;
   float: left;
-  width: 50%;
+  min-width: 50%;
+  max-width: 75%;
   height: 100%;
   margin: 0 auto;
   padding: 10px 0;
@@ -26,19 +27,11 @@ section {
   margin: 50px 10px 90px;
 }
 
-/* チャット欄 */
-.chat-editor {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  width: calc(75% - 2px);
-  max-width: 100%;
+.chat-timeline {
+
   min-height: max-content;
-  margin: 0;
-  padding: 10px;
-  border-top: 1px solid #DDDDDD;
-  background-color: #fff;
 }
+
 .page .chat .media-body {
   padding: 15px;
   margin: 0 10px;
@@ -86,15 +79,15 @@ section {
   line-height: 50px;
   text-align: center;
 }
-/* 相手のトプ画 */
-.media-left .icon {
-  border-radius: 50%;
-  background-color: #f0974e;
-}
 /* 自分のトプ画 */
 .media-right .icon {
   border-radius: 50%;
   background-color: #35b8c2;
+}
+/* 相手のトプ画 */
+.media-left .icon {
+  border-radius: 50%;
+  background-color: #f0974e;
 }
 
 /* 送信済みの編集するときの入力欄 */
@@ -111,4 +104,11 @@ mat-card {
   /* 以下の２行はヘッダーやフッターと被らないようにするプログラム */
   position: fixed;
   z-index: 999;
+}
+/* チャット送信欄 */
+.chat-editor {
+  bottom: 0;
+  padding: 10px;
+  min-width: 50%;
+  max-width: 75%;
 }

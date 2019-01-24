@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Comment } from '../../class/comment';
-import { User } from '../../class/user';
+import { Router } from '@angular/router';
 import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { AuthService } from '../../core/service/auth.service';
-import { InputComponent } from '../input/input.component';
 
-@Component({
+import { User } from '../../class/user';
+import { AuthService } from '../../core/service/auth.service';
+import { Comment } from '../../class/comment';
+
+@Component ({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css']
@@ -19,6 +20,7 @@ export class ChatComponent implements OnInit {
   content = '';
 
   constructor(
+    public router: Router,
     private afAuth: AngularFireAuth,
     private db: AngularFireDatabase,
     private authService: AuthService) {
