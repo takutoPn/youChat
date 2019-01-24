@@ -1,11 +1,11 @@
 /* ページ全般 */
 .page {
-  overflow: scroll;
   height: 100%;
-  margin: 0 auto;
   padding: 10px 0;
-  border-left: 1px solid #DDDDDD;
-  border-right: 1px solid #DDDDDD;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/welecomePage.png?alt=media&token=0e195869-46aa-4960-b986-692b2cdacb76');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* ログインカード・位置・大きさ */

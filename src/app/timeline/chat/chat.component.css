@@ -1,11 +1,16 @@
 /* ログアウトの場合 */
 .welcome {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/welecomePage.png?alt=media&token=0e195869-46aa-4960-b986-692b2cdacb76');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: #10171e; */
 }
 
 /* ログイン済み */
@@ -27,11 +32,7 @@ section {
   margin: 50px 10px 90px;
 }
 
-.chat-timeline {
-
-  min-height: max-content;
-}
-
+/* 1チャットについて */
 .page .chat .media-body {
   padding: 15px;
   margin: 0 10px;
@@ -104,6 +105,7 @@ mat-card {
   /* 以下の２行はヘッダーやフッターと被らないようにするプログラム */
   position: fixed;
   z-index: 999;
+  /* background-color: #10171e; */
 }
 /* チャット送信欄 */
 .chat-editor {
