@@ -24,6 +24,7 @@
 
 /* ボタン */
 button[type="submit"] {
+  outline:none;
   cursor: pointer;
   color: white;
   background-color: green;
