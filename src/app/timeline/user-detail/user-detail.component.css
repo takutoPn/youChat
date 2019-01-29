@@ -1,6 +1,7 @@
 /* ページ全般・右側に表示・ヘッダーと被らないようにする */
 .page {
   overflow: scroll;
+  overflow: hidden;
   float: right;
   width: 25%;
   height: 100%;

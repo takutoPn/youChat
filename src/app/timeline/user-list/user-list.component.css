@@ -1,6 +1,7 @@
 /* ユーザリスト全般・左側に表示・ヘッダーと被らないようにする */
 .user-list {
   overflow: scroll;
+  overflow-x: hidden;
   float: left;
   width: 25%;
   height: 100%;
@@ -21,6 +22,7 @@
 /* トプ画+ユーザ名 */
 mat-card {
   outline:none;
+  height: 88px;
 }
 
 /* トプ画のサイズ */
@@ -39,6 +41,6 @@ img{
 
 /* ユーザ名 */
 b {
-  color: black;
-  font-size: 20px;
+  font-size: 25px;
+  margin: auto;
 }
