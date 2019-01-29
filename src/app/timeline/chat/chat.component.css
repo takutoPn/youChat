@@ -10,7 +10,6 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  /* background-color: #10171e; */
 }
 
 /* ログイン済み */
@@ -18,6 +17,7 @@
 /* 真ん中に表示する位置の設定 */
 .page {
   overflow: scroll;
+  overflow-x: hidden;
   float: left;
   min-width: 50%;
   max-width: 75%;
