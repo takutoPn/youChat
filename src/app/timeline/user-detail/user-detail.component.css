@@ -23,3 +23,8 @@ img{
   width: 80%;
   height: auto;
 }
+
+button {
+  outline: none;
+  float: right;
+}
