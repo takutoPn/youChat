@@ -3,6 +3,10 @@
   width: 90%;
 }
 
+.inputs {
+  width: 100%;
+}
+
 /* 送信ボタン */
 button {
   float: right;
