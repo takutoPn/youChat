@@ -19,7 +19,7 @@ import {
   MatButtonModule,
   MatCheckboxModule,
   MatToolbarModule,
-
+  MatSidenavModule,
   MatListModule,
   MatCardModule,
   MatListItem,
@@ -48,6 +48,7 @@ import {
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatListModule,
     MatFormFieldModule, MatMenuModule, MatIconModule,
+    MatSidenavModule
   ],
   exports: [
     MatToolbarModule, MatListItem

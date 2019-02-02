@@ -3,7 +3,8 @@
   overflow: scroll;
   overflow: hidden;
   float: right;
-  width: 25%;
+  min-width: 0%;
+  max-width: 25%;
   height: 100%;
   padding-top: 20px;
 }
@@ -22,4 +23,9 @@
 img{
   width: 80%;
   height: auto;
+}
+
+button {
+  outline: none;
+  float: right;
 }
