@@ -100,17 +100,17 @@ section {
   width: 100%;
 }
 
-/* 文字を入力する部分 */
+/* チャット送信欄 */
 mat-card {
   /* 以下の２行はヘッダーやフッターと被らないようにするプログラム */
   position: fixed;
   z-index: 999;
-  /* background-color: #10171e; */
 }
 /* チャット送信欄 */
 .chat-editor {
   bottom: 0;
   padding: 10px;
-  min-width: 50%;
-  max-width: 75%;
+  /* min-width: 49%;
+  max-width: 75%; */
+  width: 75%;
 }
