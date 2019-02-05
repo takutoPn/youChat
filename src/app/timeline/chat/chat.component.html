@@ -20,7 +20,7 @@
           <div class='list-group-item flex-column align-items-start border-0'>
             <div class='media'>
               <div class='media-left' *ngIf='comment.user.uid !== currentUser.uid'>
-                <a href='#' class='icon'>{{ comment.initial }}</a>
+                <img href='#' class='icon' src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/profile.png?alt=media&token=e6ab8e2d-5432-43e9-8b0e-5a3bdac166b0'>
               </div>
               <div class='media-body'>
                 <div class='d-flex w-100 justify-content-between'>
@@ -46,7 +46,7 @@
                 </ng-container>
               </div>
               <div class='media-right' *ngIf='comment.user.uid === currentUser.uid'>
-                <a href='#' class='icon'>{{ comment.initial }}</a>
+                <img href='#' class='icon' src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/profile.png?alt=media&token=e6ab8e2d-5432-43e9-8b0e-5a3bdac166b0'>
               </div>
             </div>
           </div>
