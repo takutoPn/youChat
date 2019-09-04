@@ -9,7 +9,7 @@
 }
 
 /* アカウント作成カード・位置・大きさ  */
-.container  {
+.container {
   margin-top: 10%;
   text-align: center;
   margin-left: center;
@@ -20,8 +20,9 @@
 
 /* youchatロゴ設定*/
 img {
-  outline:none;
+  outline: none;
   width: 25%;
+  margin-left: 37.5%;
 }
 
 /* メールアドレス・パスワードの入力欄のcss */
@@ -42,4 +43,39 @@ button[type="submit"] {
 .login {
   text-align: center;
   margin: 20px 0;
+}
+
+@media (prefers-color-scheme: light) {
+  mat-card {
+    background-color: white;
+    color: black;
+  }
+
+  .whiteTheme {
+    display: none;
+  }
+
+  .darkTheme {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  mat-card {
+    background-color: black;
+    color: white;
+  }
+
+  mat-form-field {
+    -webkit-text-fill-color: white;
+  }
+
+  .whiteTheme {
+    display: block;
+  }
+
+  .darkTheme {
+    display: none;
+    text-align: center;
+  }
 }

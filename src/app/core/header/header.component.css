@@ -34,3 +34,14 @@ button {
 .fill-space {
  flex: 1 1 auto;
 }
+
+@media (prefers-color-scheme: dark) {
+  mat-menu {
+  background-color: black;
+  color: white;
+  }
+  button .matButton{
+    background-color: black;
+    color: white;
+    }
+}

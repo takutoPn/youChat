@@ -1,7 +1,10 @@
 <div class='page'>
   <mat-card class='container'>
   <form #f='ngForm' (ngSubmit)='login(f)'>
-    <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794'>
+    <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794'
+    class='darkTheme'>
+    <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo_dark.png?alt=media&token=cfe45e03-7d53-437d-ae14-4623f270fa2d'
+    class='whiteTheme'>
     <h2 class='heading '>ログイン</h2>
     <mat-form-field class='form-group'>
       <input matInput type='email' ngModel name='email' placeholder='メールアドレスを入力' required autofocus>

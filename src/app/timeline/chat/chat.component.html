@@ -1,8 +1,10 @@
 <div *ngIf='!currentUser' class='welcome'>
-  <mat-card>
+  <mat-card class='startpage'>
     <div class='container'>
       <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794'
-        class='display-3 size'>
+        class='darkTheme display-3 size'>
+      <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo_dark.png?alt=media&token=cfe45e03-7d53-437d-ae14-4623f270fa2d'
+        class='whiteTheme display-3 size'>
       <p class='w-100'>
         <a routerLink='/signup'>新規登録</a>または<a routerLink='/login'>ログイン</a>
       </p>
@@ -17,14 +19,14 @@
     <section class='chat'>
       <div class='chat-timeline'>
         <ng-container *ngFor='let comment of comments; let i = index'>
-          <div class='list-group-item flex-column align-items-start border-0'>
+          <div class=' flex-column align-items-start border-0'>
             <div class='media'>
               <div class='media-left' *ngIf='comment.user.uid !== currentUser.uid'>
                 <img href='#' class='icon' src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/profile.png?alt=media&token=e6ab8e2d-5432-43e9-8b0e-5a3bdac166b0'>
               </div>
               <div class='media-body'>
                 <div class='d-flex w-100 justify-content-between'>
-                  <h4 class='media-heading'>{{ comment.user.displayName }}
+                  <h4 class='media-headingchat-editor'>{{ comment.user.displayName }}
                     <ng-container *ngIf='comment.user.uid === currentUser.uid'>
                       <i class='fa fa-edit ml-2' title='編集' (click)='toggleEditComment(i)'></i>
                       <i class='fa fa-trash ml-1' title='削除' (click)='deleteComment(comment.key)'></i>

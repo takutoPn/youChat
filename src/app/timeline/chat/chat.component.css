@@ -24,7 +24,7 @@
   height: 100%;
   margin: 0 auto;
   padding: 10px 0;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
 }
@@ -39,11 +39,11 @@ section {
   border-radius: 4px;
   font-size: 15px;
   word-break: break-all;
-  background-color: greenyellow
 }
 .media-body h4.media-heading {
-  color: #aaaaaa;
+  color: white;
   font-size: 13px;
+  font-weight: bold;
 }
 .media-body .media-date {
   color: #aaaaaa;
@@ -109,8 +109,46 @@ mat-card {
 /* チャット送信欄 */
 .chat-editor {
   bottom: 0;
-  padding: 10px;
+  padding: 0 10px 0 10px;
   /* min-width: 49%;
   max-width: 75%; */
   width: 75%;
 }
+
+@media (prefers-color-scheme: light) {
+  /* ようこそ */
+  .whiteTheme {
+    display:none;
+  }
+  .darkTheme {
+    display:block;
+  }
+  .page {
+    background-color: white;
+    color: black;
+  }
+    
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* ようこそ */
+    .whiteTheme {
+      display:block;
+    }
+    .darkTheme {
+      display:none;
+    }
+    /* ログイン後 */
+    .page {
+    background-color: black;
+    color: white;
+    }
+    input ::placeholder {
+      color: white;
+    }
+
+    mat-card {
+       background-color: black;
+       color:white;
+    }
+  }

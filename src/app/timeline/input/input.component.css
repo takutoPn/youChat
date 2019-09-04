@@ -6,10 +6,39 @@
 .inputs {
   width: 100%;
 }
-
 /* 送信ボタン */
 button {
   float: right;
   color: white;
   background-color: green;
+  margin: 5px;
+}
+
+
+/* .user-list {
+  background-color: black;
+  color: white;
+} */
+
+@media (prefers-color-scheme: light) {
+  div {
+    background-color: white;
+    color: black;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  form {
+    background-color: black;
+    color: white;
+    -webkit-text-fill-color:white;
+  }
+  
+  /* ::-webkit-text-fill-color{
+
+  } */
+  /* mat-form-field.custom-autofill {
+    /* @include cdk-text-field-autofill-color(transparent, red); */
+  
 }

@@ -29,3 +29,10 @@ button {
   outline: none;
   float: right;
 }
+
+@media (prefers-color-scheme: dark) {
+  .page {
+  background-color: black;
+  color: white;
+  }
+}

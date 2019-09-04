@@ -29,3 +29,13 @@ button[type="submit"] {
   color: white;
   background-color: green;
 }
+@media (prefers-color-scheme: dark) {
+  .page {
+  background-color: black;
+  color: white;
+  }
+  mat-card{
+    background-color: black;
+    color: white;
+  }
+}

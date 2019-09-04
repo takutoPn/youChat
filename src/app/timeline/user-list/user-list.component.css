@@ -44,3 +44,24 @@ b {
   font-size: 25px;
   margin: auto;
 }
+@media (prefers-color-scheme: light) {
+  div {
+    background-color: white;
+    color: black;
+  }
+    
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .user-list {
+    background-color: black;
+    color: white;
+    }
+    mat-card {
+      background-color: black;
+      color: white;
+      }
+    mat-card:hover {
+      background-color:#00002D;
+    }
+  }
