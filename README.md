@@ -14,9 +14,3 @@
 
 ## 公開してるよー
 https://www.you-chat.tokyo/
-
-## SNSなど
-
-ブログ:https://www.pppppo-n.com/
-
-facebook:https://www.facebook.com/yusukeEndooh
