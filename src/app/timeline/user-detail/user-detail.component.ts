@@ -5,7 +5,7 @@ import { User } from '../../class/user';
 import { Location } from '@angular/common';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../../core/service/auth.service';
-import { NgForm } from '@angular/forms/src/directives/ng_form';
+import { NgForm } from '@angular/Forms';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
 @Component({
