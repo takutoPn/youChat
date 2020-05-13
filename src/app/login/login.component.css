@@ -11,7 +11,6 @@
 .container  {
   margin-top: 10%;
   text-align: center;
-  /* margin-left: center; */
   min-width: 150px;
   max-width: 500px;
   width: 100%;
@@ -21,7 +20,8 @@
 img {
   outline:none;
   width: 25%;
-  margin-left: 37.5%;
+  /* margin-left: 37.5%; テーマ用*/
+  text-align: center;
 }
 
 /* 入力欄 */
@@ -41,6 +41,7 @@ button[type="submit"] {
   text-align: center;
   margin: 20px 0;
 }
+/*
 @media (prefers-color-scheme: light) {
   mat-card {
     background-color: white;
@@ -51,9 +52,9 @@ button[type="submit"] {
   }
   .darkTheme {
     display:block;
-  } 
+  }
 }
-  
+
   @media (prefers-color-scheme: dark) {
     mat-card {
     background-color: black;
@@ -70,4 +71,4 @@ button[type="submit"] {
       display:none;
       text-align: center;
     }
-  }
+  } */

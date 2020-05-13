@@ -3,7 +3,7 @@ import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/fo
 
 import { UserService } from '../core/service/user.service';
 // import { MatButtonModule, MatCheckboxModule } from '@angular/material';
-// import { ErrorStateMatcher } from '@angular/material/core';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 @Component({
   selector: 'app-sign-up',

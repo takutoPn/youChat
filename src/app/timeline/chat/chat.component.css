@@ -18,16 +18,17 @@
 .page {
   overflow: scroll;
   overflow-x: hidden;
-  float: center;
   min-width: 50%;
   max-width: 75%;
   height: 100%;
   margin: 0 auto;
-  padding: 10px 0;
-  /* background-color: #fff; */
+  /* padding: 10px 0; */
+  /* border-top: 100px;
+  border-bottom: 100px; */
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
 }
+/* margin: 65px 0 0 0; */
 section {
   margin: 50px 10px 90px;
 }
@@ -110,14 +111,13 @@ mat-card {
 .chat-editor {
   bottom: 0;
   padding: 0 10px 0 10px;
-  /* min-width: 49%;
-  max-width: 75%; */
+  background-color: #252525;
   width: 75%;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) { */
   /* ようこそ */
-  .whiteTheme {
+  /* .whiteTheme {
     display:none;
   }
   .darkTheme {
@@ -127,20 +127,20 @@ mat-card {
     background-color: white;
     color: black;
   }
-    
-  }
-  
-  @media (prefers-color-scheme: dark) {
+
+  } */
+
+  /* @media (prefers-color-scheme: dark) { */
     /* ようこそ */
-    .whiteTheme {
+    /* .whiteTheme {
       display:block;
     }
     .darkTheme {
       display:none;
-    }
+    } */
     /* ログイン後 */
-    .page {
-    background-color: black;
+    /* .page { */
+    /* background-color: black;
     color: white;
     }
     input ::placeholder {
@@ -151,4 +151,4 @@ mat-card {
        background-color: black;
        color:white;
     }
-  }
+  } */

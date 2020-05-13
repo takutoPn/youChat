@@ -1,8 +1,8 @@
 <div *ngIf='!currentUser' class='welcome'>
   <mat-card class='startpage'>
     <div class='container'>
-      <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794'
-        class='darkTheme display-3 size'>
+      <!-- <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo.png?alt=media&token=1651275a-1056-4378-be07-3a4273bf2794'
+        class='darkTheme display-3 size'> -->
       <img src='https://firebasestorage.googleapis.com/v0/b/angular-chat-b2b84.appspot.com/o/logo_dark.png?alt=media&token=cfe45e03-7d53-437d-ae14-4623f270fa2d'
         class='whiteTheme display-3 size'>
       <p class='w-100'>
@@ -38,9 +38,9 @@
                   <pre>{{ comment.message }}</pre>
                 </ng-container>
                 <ng-container *ngIf='comment.isEdit'>
-                  <div class='input-group'>
-                    <textarea class='form-control' [(ngModel)]='comment.message' name='edit_comment'></textarea>
-                  </div>
+                  <mat-form-field class='input-group'>
+                    <textarea matInput class='form-control' [(ngModel)]='comment.message' name='edit_comment'></textarea>
+                  </mat-form-field>
                   <div class='edit-buttons'>
                     <button mat-raised-button class='btn btn-success btn-sm' (click)='saveEditComment(i, comment.key)'>保存</button>
                     <button mat-raised-button class='btn btn-warning btn-sm' (click)='toggleEditComment(i)'>キャンセル</button>

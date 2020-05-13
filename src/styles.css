@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
 html, body {
   height: 100%;
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #2a2a2a;
+  color: white;
 }
 
 html, body { height: 100%; }
