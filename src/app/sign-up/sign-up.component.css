@@ -22,7 +22,8 @@
 img {
   outline: none;
   width: 25%;
-  margin-left: 37.5%;
+  /* margin-left: 37.5%; テーマ用*/
+  text-align: center;
 }
 
 /* メールアドレス・パスワードの入力欄のcss */
@@ -44,7 +45,7 @@ button[type="submit"] {
   text-align: center;
   margin: 20px 0;
 }
-
+/*
 @media (prefers-color-scheme: light) {
   mat-card {
     background-color: white;
@@ -78,4 +79,4 @@ button[type="submit"] {
     display: none;
     text-align: center;
   }
-}
+} */

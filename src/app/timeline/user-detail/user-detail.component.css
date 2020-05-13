@@ -30,9 +30,9 @@ button {
   float: right;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
+/* @media (prefers-color-scheme: dark) { */
+  /* .page {
   background-color: black;
   color: white;
-  }
-}
+  } */
+/* } */

@@ -2,7 +2,6 @@
 .page {
   overflow: scroll;
   height: 100%;
-  background-color: #fff;
 }
 
 /* ニックネーム編集欄・位置・大きさ*/
@@ -28,14 +27,4 @@ button[type="submit"] {
   cursor: pointer;
   color: white;
   background-color: green;
-}
-@media (prefers-color-scheme: dark) {
-  .page {
-  background-color: black;
-  color: white;
-  }
-  mat-card{
-    background-color: black;
-    color: white;
-  }
 }

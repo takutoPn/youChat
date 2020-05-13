@@ -35,7 +35,7 @@ button {
  flex: 1 1 auto;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   mat-menu {
   background-color: black;
   color: white;
@@ -44,4 +44,4 @@ button {
     background-color: black;
     color: white;
     }
-}
+} */

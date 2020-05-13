@@ -1,4 +1,6 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+form {
+  background-color: #252525;
+}
 
 /* テキストボックスの横幅 */
 .input-me {
@@ -16,6 +18,12 @@ button {
   margin: 5px;
 }
 
+
+/* .user-list {
+  background-color: black;
+  color: white;
+} */
+/*
 @media (prefers-color-scheme: light) {
   div {
     background-color: white;
@@ -29,5 +37,10 @@ button {
     background-color: black;
     color: white;
     -webkit-text-fill-color:white;
-  }  
-}
+  } */
+  /* ::-webkit-text-fill-color{
+
+  } */
+  /* mat-form-field.custom-autofill {
+    /* @include cdk-text-field-autofill-color(transparent, red); */
+/* } */

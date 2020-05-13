@@ -21,6 +21,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
@@ -73,6 +74,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
@@ -132,5 +134,8 @@
     "@schematics/angular:directive": {
       "prefix": "app"
     }
+  },
+  "cli": {
+    "analytics": "cfac916d-7acc-47e3-8863-f1fc690d9752"
   }
 }

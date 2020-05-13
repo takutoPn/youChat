@@ -2,7 +2,7 @@ import { Component, OnInit, NgModule  } from '@angular/core';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 
 import { UserService } from '../core/service/user.service';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+// import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { ErrorStateMatcher } from '@angular/material/core';
 
 @Component({
@@ -12,8 +12,8 @@ import { ErrorStateMatcher } from '@angular/material/core';
 })
 @NgModule({
   imports: [
-    MatButtonModule,
-    MatCheckboxModule
+    // MatButtonModule,
+    // MatCheckboxModule
   ]
 })
 export class SignUpComponent implements OnInit {
