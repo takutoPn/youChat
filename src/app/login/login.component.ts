@@ -1,7 +1,7 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { AuthService } from '../core/service/auth.service';
 import { NgForm } from '@angular/forms';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+// import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
 @Component({
   selector: 'app-login',
@@ -10,8 +10,8 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 })
 @NgModule({
   imports: [
-    MatButtonModule,
-    MatCheckboxModule
+    // MatButtonModule,
+    // MatCheckboxModule
   ],
 })
 export class LoginComponent implements OnInit {

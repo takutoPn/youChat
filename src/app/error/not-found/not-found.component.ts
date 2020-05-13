@@ -1,5 +1,5 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import { MatButtonModule, MatCardModule } from '@angular/material';
+// import { MatButtonModule, MatCardModule } from '@angular/material';
 
 @Component({
   selector: 'app-not-found',
@@ -9,7 +9,7 @@ import { MatButtonModule, MatCardModule } from '@angular/material';
 
 @NgModule({
   imports: [
-    MatCardModule, MatButtonModule,
+    // MatCardModule, MatButtonModule,
   ]
 })
 

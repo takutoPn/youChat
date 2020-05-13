@@ -6,7 +6,7 @@ import { Location } from '@angular/common';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AuthService } from '../../core/service/auth.service';
 import { NgForm } from '@angular/Forms';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+// import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 
 @Component({
   selector: 'app-user-detail',

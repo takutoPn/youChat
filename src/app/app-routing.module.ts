@@ -6,19 +6,7 @@ import { NotFoundComponent } from './error/not-found/not-found.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
-import { MatInputModule } from '@angular/material/input';
-import { MatMenuModule } from '@angular/material/menu';
-import {
-  MatButtonModule,
-  MatCheckboxModule,
-  MatToolbarModule,
-  MatDividerModule,
-  MatListModule,
-  MatCardModule,
-  MatListItem,
-  MatFormFieldModule,
-  MatIconModule
-} from '@angular/material';
+
 
 const routes: Routes = [
   { path: 'timeline', loadChildren: 'app/timeline/timeline.module#TimelineModule' },
@@ -36,11 +24,6 @@ const routes: Routes = [
   ],
   exports: [
     RouterModule,
-    MatInputModule,
-    MatInputModule,
-    MatButtonModule, MatCheckboxModule,
-    MatToolbarModule, MatCardModule, MatListModule,
-    MatFormFieldModule, MatMenuModule, MatIconModule
   ],
   declarations: [],
   providers: [
