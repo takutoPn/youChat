@@ -17,4 +17,4 @@
 	ng serve --aot
 
 ## 公開してるよー
-[link] https://www.you-chat.app {:target="_blank"}
+[link] https://www.you-chat.app{:target="_blank"}
