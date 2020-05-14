@@ -17,4 +17,4 @@
 	ng serve --aot
 
 ## 公開してるよー
-[link] https://www.you-chat.app{:target="_blank"}
+<a href="URL" target="_blank">https://www.you-chat.app/timeline</a>	
