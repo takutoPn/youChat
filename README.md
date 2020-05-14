@@ -3,7 +3,6 @@
 勉強でやってまーす
 
 - 2020/05/14
-Angular8が色々おかしかったから修正したー
 ついでにクソダサブラックテーマどうにかした。白はダルいから削除!!!
 
 
@@ -18,4 +17,4 @@ Angular8が色々おかしかったから修正したー
 	ng serve --aot
 
 ## 公開してるよー
-https://www.you-chat.tokyo/
+https://www.you-chat.app
