@@ -1,4 +1,4 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../core/service/user.service';
 import { NgForm } from '@angular/forms';
 // import { MatButtonModule, MatCheckboxModule } from '@angular/material';
@@ -8,12 +8,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-@NgModule({
-  imports: [
-    // MatButtonModule,
-    // MatCheckboxModule
-  ],
-})
+
 export class ProfileComponent implements OnInit {
 
   constructor(private userService: UserService) { }
