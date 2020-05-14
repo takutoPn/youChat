@@ -79,7 +79,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatInputModule,
     MatButtonModule, MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatListModule,
-    MatFormFieldModule, MatMenuModule, MatIconModule,
+    MatFormFieldModule, MatIconModule,
     MatSidenavModule
   ],
   providers: [],

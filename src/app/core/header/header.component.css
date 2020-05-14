@@ -4,9 +4,7 @@ mat-toolbar{
   position: fixed;
   top: 0px;
   left: 0px;
-}
-/* 背景色 */
-.mat-toolbar.mat-primary {
+
   background-color: #3f51b5;
 }
 
