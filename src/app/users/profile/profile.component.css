@@ -28,3 +28,11 @@ button[type="submit"] {
   color: white;
   background-color: green;
 }
+
+/* スマホ */
+@media screen and ( max-width:479px ) {
+  .container{
+    margin-top: 100px;
+    width : 80%;
+  }
+}

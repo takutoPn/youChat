@@ -48,3 +48,14 @@ b {
   font-size: 25px;
   margin: auto;
 }
+
+/* スマホ */
+@media screen and ( max-width:479px ) {
+  .user-list {
+    display: none;
+  }
+  /* 名前 */
+  b {
+    font-size: 16px;
+  }
+}

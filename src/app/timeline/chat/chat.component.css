@@ -19,14 +19,8 @@
   overflow: scroll;
   overflow-x: hidden;
   min-width: 50%;
-  max-width: 75%;
   height: 100%;
   margin: 0 auto;
-  /* padding: 10px 0; */
-  /* border-top: 100px;
-  border-bottom: 100px; */
-  border-left: 1px solid #DDDDDD;
-  border-right: 1px solid #DDDDDD;
 }
 /* margin: 65px 0 0 0; */
 section {
@@ -46,6 +40,10 @@ section {
   font-size: 13px;
   font-weight: bold;
 }
+.media-headingchat-editor {
+  white-space: nowrap;
+}
+
 .media-body .media-date {
   color: #aaaaaa;
   font-size: 11px;
@@ -115,6 +113,19 @@ mat-card {
   width: 75%;
 }
 
+/* スマホ */
+@media screen and ( max-width:479px ) {
+  .page {
+    margin:0;
+    width: 100%;
+  }
+  .media-headingchat-editor {
+    font-size: 1.3rem;
+  }
+  .chat-editor {
+    width: 100%;
+  }
+}
 /* @media (prefers-color-scheme: light) { */
   /* ようこそ */
   /* .whiteTheme {

@@ -30,6 +30,13 @@ button {
   float: right;
 }
 
+/* スマホ */
+@media screen and ( max-width:479px ) {
+  .page {
+    display: none;
+  }
+}
+
 /* @media (prefers-color-scheme: dark) { */
   /* .page {
   background-color: black;
